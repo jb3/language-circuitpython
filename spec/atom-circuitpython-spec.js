@@ -1,5 +1,7 @@
 "use babel";
 
+/* global describe beforeEach atom it expect waitsForPromise runs */
+
 import { BoardView } from "../lib/board-view";
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
