@@ -1,7 +1,7 @@
 {
   "name": "atom-circuitpython",
   "main": "./lib/atom-circuitpython",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
