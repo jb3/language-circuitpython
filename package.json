@@ -2,12 +2,12 @@
   "name": "atom-circuitpython",
   "main": "./lib/atom-circuitpython",
   "version": "0.0.5",
-  "description": "A short description of your package",
+  "description": "Integrate CircuitPython devices straight into Atom!",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "atom-circuitpython:toggle"
   },
-  "repository": "https://github.com/atom/atom-circuitpython",
+  "repository": "https://github.com/jos-b/atom-circuitpython",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
