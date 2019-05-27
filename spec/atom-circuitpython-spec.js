@@ -1,13 +1,13 @@
 "use babel";
 
-import AtomCircuitpython from "../lib/atom-circuitpython";
+import { BoardView } from "../lib/board-view";
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe("AtomCircuitpython", () => {
+describe("Atom CircuitPython", () => {
     let workspaceElement, activationPromise;
 
     beforeEach(() => {
@@ -30,43 +30,17 @@ describe("AtomCircuitpython", () => {
             });
 
             runs(() => {
-                expect(workspaceElement.querySelector(".atom-circuitpython")).toExist();
+                let found;
+                atom.workspace.getPanes().forEach(item => {
+                    item.getItems().forEach(p => {
+                        if (p instanceof BoardView) {
+                            item.activateItemAtIndex(p);
+                            found = true;
+                        }
+                    });
+                });
 
-                let atomCircuitpythonElement = workspaceElement.querySelector(".atom-circuitpython");
-                expect(atomCircuitpythonElement).toExist();
-
-                let atomCircuitpythonPanel = atom.workspace.panelForItem(atomCircuitpythonElement);
-                expect(atomCircuitpythonPanel.isVisible()).toBe(true);
-                atom.commands.dispatch(workspaceElement, "atom-circuitpython:toggle");
-                expect(atomCircuitpythonPanel.isVisible()).toBe(false);
-            });
-        });
-
-        it("hides and shows the view", () => {
-            // This test shows you an integration test testing at the view level.
-
-            // Attaching the workspaceElement to the DOM is required to allow the
-            // `toBeVisible()` matchers to work. Anything testing visibility or focus
-            // requires that the workspaceElement is on the DOM. Tests that attach the
-            // workspaceElement to the DOM are generally slower than those off DOM.
-            jasmine.attachToDOM(workspaceElement);
-
-            expect(workspaceElement.querySelector(".atom-circuitpython")).not.toExist();
-
-            // This is an activation event, triggering it causes the package to be
-            // activated.
-            atom.commands.dispatch(workspaceElement, "atom-circuitpython:toggle");
-
-            waitsForPromise(() => {
-                return activationPromise;
-            });
-
-            runs(() => {
-                // Now we can test for view visibility
-                let atomCircuitpythonElement = workspaceElement.querySelector(".atom-circuitpython");
-                expect(atomCircuitpythonElement).toBeVisible();
-                atom.commands.dispatch(workspaceElement, "atom-circuitpython:toggle");
-                expect(atomCircuitpythonElement).not.toBeVisible();
+                expect(found).toBe(true);
             });
         });
     });
