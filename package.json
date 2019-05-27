@@ -1,0 +1,21 @@
+{
+  "name": "atom-circuitpython",
+  "main": "./lib/atom-circuitpython",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "atom-circuitpython:toggle"
+  },
+  "repository": "https://github.com/atom/atom-circuitpython",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "glob": ">=7.1.4"
+  },
+  "deserializers": {
+    "atom-circuitpython/BoardView": "deserializeBoardView"
+  }
+}
