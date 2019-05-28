@@ -1,7 +1,7 @@
 {
   "name": "atom-circuitpython",
   "main": "./lib/atom-circuitpython",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Integrate CircuitPython devices straight into Atom!",
   "keywords": [],
   "activationCommands": {
