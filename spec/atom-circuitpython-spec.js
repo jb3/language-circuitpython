@@ -25,7 +25,7 @@ describe("Atom CircuitPython", () => {
 
             // This is an activation event, triggering it will cause the package to be
             // activated.
-            atom.commands.dispatch(workspaceElement, "atom-circuitpython:toggle");
+            atom.commands.dispatch(workspaceElement, "atom-circuitpython:toggle-serial");
 
             waitsForPromise(() => {
                 return activationPromise;
