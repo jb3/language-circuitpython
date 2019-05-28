@@ -29,3 +29,5 @@
 * `6d836a8faf97f36c404f2ca8fd983308f974b370` Add colors dependent on theme
 * `4586b2ee354575f3abaa06ea3f38ee0073f124ba` Add max lines dependent on settings
 * `d514df8fb528e48e5178ac6edb95b61fe6827d18` Add config specification
+
+## 0.6.0 - Rename

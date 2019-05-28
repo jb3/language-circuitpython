@@ -1,16 +1,16 @@
 {
-  "name": "atom-circuitpython",
-  "main": "./lib/atom-circuitpython",
+  "name": "language-circuitpython",
+  "main": "./lib/language-circuitpython",
   "version": "0.5.1",
   "description": "Integrate CircuitPython devices straight into Atom!",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": [
-      "atom-circuitpython:toggle-serial",
-      "atom-circuitpython:toggle-plotter"
+      "language-circuitpython:toggle-serial",
+      "language-circuitpython:toggle-plotter"
     ]
   },
-  "repository": "https://github.com/jos-b/atom-circuitpython",
+  "repository": "https://github.com/jos-b/language-circuitpython",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -21,7 +21,7 @@
     "serialport": "^7.1.5"
   },
   "deserializers": {
-    "atom-circuitpython/BoardView": "deserializeBoardView",
-    "atom-circuitpython/PlotterView": "deserializePlotterView"
+    "language-circuitpython/BoardView": "deserializeBoardView",
+    "language-circuitpython/PlotterView": "deserializePlotterView"
   }
 }

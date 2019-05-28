@@ -9,23 +9,23 @@ import { BoardView } from "../lib/board-view";
 // To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe("Atom CircuitPython", () => {
+describe("CircuitPython", () => {
     let workspaceElement, activationPromise;
 
     beforeEach(() => {
         workspaceElement = atom.views.getView(atom.workspace);
-        activationPromise = atom.packages.activatePackage("atom-circuitpython");
+        activationPromise = atom.packages.activatePackage("language-circuitpython");
     });
 
-    describe("when the atom-circuitpython:toggle-serial event is triggered", () => {
+    describe("when the language-circuitpython:toggle-serial event is triggered", () => {
         it("hides and shows the modal panel", () => {
             // Before the activation event the view is not on the DOM, and no panel
             // has been created
-            expect(workspaceElement.querySelector(".atom-circuitpython")).not.toExist();
+            expect(workspaceElement.querySelector(".language-circuitpython")).not.toExist();
 
             // This is an activation event, triggering it will cause the package to be
             // activated.
-            atom.commands.dispatch(workspaceElement, "atom-circuitpython:toggle-serial");
+            atom.commands.dispatch(workspaceElement, "language-circuitpython:toggle-serial");
 
             waitsForPromise(() => {
                 return activationPromise;

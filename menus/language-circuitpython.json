@@ -1,0 +1,22 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "CircuitPython",
+          "submenu": [
+            {
+              "label": "Open Serial",
+              "command": "language-circuitpython:toggle-serial"
+            },
+            {
+              "label": "Open Plotter",
+              "command": "language-circuitpython:toggle-plotter"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
