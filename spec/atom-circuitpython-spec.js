@@ -17,7 +17,7 @@ describe("Atom CircuitPython", () => {
         activationPromise = atom.packages.activatePackage("atom-circuitpython");
     });
 
-    describe("when the atom-circuitpython:toggle event is triggered", () => {
+    describe("when the atom-circuitpython:toggle-serial event is triggered", () => {
         it("hides and shows the modal panel", () => {
             // Before the activation event the view is not on the DOM, and no panel
             // has been created
