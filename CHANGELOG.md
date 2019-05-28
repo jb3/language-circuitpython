@@ -12,3 +12,4 @@
 
 # 0.4.2 - Plotter enhancements
 * Change colour of plotted lines to make it more visible
+* Updated readme to show coloured graphs
