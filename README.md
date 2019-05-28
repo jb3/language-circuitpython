@@ -2,7 +2,7 @@
 
 This is a very much WIP package which will display the output from CircuitPython devices inside a window in your Atom editor.
 
-It is **highly recommended** that you use the [`fsync-on-save`](https://atom.io/packages/fsync-on-save) package with this package to ensure data integrity while working with circuitpython devices in Atom, please read the documentation on that package for additional information.
+This plugin contains the code from the [`fsync-on-save`](https://atom.io/packages/fsync-on-save) package to ensure data is flushed to the device immediately after saving, therefore preventing loss or corruption of data when working with CircuitPython devices.
 
 Should be compatible with Windows & Linux as the serial port library *should* be cross-platform, let me know in the issues of any errors cropping up.
 
