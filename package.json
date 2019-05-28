@@ -5,7 +5,10 @@
   "description": "Integrate CircuitPython devices straight into Atom!",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-circuitpython:toggle"
+    "atom-workspace": [
+      "atom-circuitpython:toggle-serial",
+      "atom-circuitpython:toggle-plotter"
+    ]
   },
   "repository": "https://github.com/jos-b/atom-circuitpython",
   "license": "MIT",
@@ -14,10 +17,11 @@
   },
   "dependencies": {
     "@serialport/parser-readline": "^2.0.2",
-    "glob": ">=7.1.4",
+    "chart.js": "^2.8.0",
     "serialport": "^7.1.5"
   },
   "deserializers": {
-    "atom-circuitpython/BoardView": "deserializeBoardView"
+    "atom-circuitpython/BoardView": "deserializeBoardView",
+    "atom-circuitpython/PlotterView": "deserializePlotterView"
   }
 }

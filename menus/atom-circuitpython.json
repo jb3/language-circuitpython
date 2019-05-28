@@ -7,8 +7,12 @@
           "label": "Atom CircuitPython",
           "submenu": [
             {
-              "label": "Toggle Pane",
-              "command": "atom-circuitpython:toggle"
+              "label": "Toggle Serial",
+              "command": "atom-circuitpython:toggle-serial"
+            },
+            {
+              "label": "Toggle Plotter",
+              "command": "atom-circuitpython:toggle-plotter"
             }
           ]
         }
