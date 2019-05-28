@@ -9,3 +9,6 @@
 # 0.4.1 - Plotter enhancements
 * Added plotter to readme
 * Changed some limiting things on the plotter
+
+# 0.4.2 - Plotter enhancements
+* Change colour of plotted lines to make it more visible
