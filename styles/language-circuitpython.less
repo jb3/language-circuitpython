@@ -4,9 +4,19 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.language-circuitpython-seriaal {
+.language-circuitpython-serial {
 }
 
+// These styles are used to make the textarea appear like a <pre> element.
 .atom-circuitp-code {
-  white-space: pre-line;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: var(--editor-font-size);
+  line-height: var(--editor-line-height);
+  padding: 8px;
+  box-shadow: none;
+  color: @text-color;
+  background: @inset-panel-background-color;
+  border-radius: @component-border-radius;
+  border: none;
+  margin: 0;
 }
