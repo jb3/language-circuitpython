@@ -1,6 +1,6 @@
 # Atom CircuitPython
 
-CircuitPython language support in Atom. Support for serial outputs and plotting of data.
+CircuitPython language support in Atom. Support for serial outputs, Python REPL, and plotting of data.
 
 This plugin contains the code from the [`fsync-on-save`](https://atom.io/packages/fsync-on-save) package to ensure data is flushed to the device immediately after saving, therefore preventing loss or corruption of data when working with CircuitPython devices.
 
