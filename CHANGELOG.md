@@ -31,3 +31,8 @@
 * `d514df8fb528e48e5178ac6edb95b61fe6827d18` Add config specification
 
 ## 0.6.0 - Rename
+* `eda30fcebc6c988e6aa1e9fdb76fec9cb303ab15` rename to language-circuitpython
+
+## 0.7.0 - REPL
+* `ec3cfdf6c4b66de20b9b35142f323e2665bb7ed3` add support for serial input for REPL within Atom (thanks to @dunkmann00!)
+* `aa2149405321273cd3356bf074f40c5317aad672` Security fixes
