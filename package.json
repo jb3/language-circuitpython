@@ -16,7 +16,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "@serialport/parser-readline": "^2.0.2",
     "chart.js": "^2.8.0",
     "serialport": "^7.1.5"
   },
