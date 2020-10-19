@@ -10,7 +10,7 @@
       "language-circuitpython:toggle-plotter"
     ]
   },
-  "repository": "https://github.com/jos-b/language-circuitpython",
+  "repository": "https://github.com/jb3/language-circuitpython",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
