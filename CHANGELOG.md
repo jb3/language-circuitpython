@@ -36,3 +36,6 @@
 ## 0.7.0 - REPL
 * `ec3cfdf6c4b66de20b9b35142f323e2665bb7ed3` add support for serial input for REPL within Atom (thanks to @dunkmann00!)
 * `aa2149405321273cd3356bf074f40c5317aad672` Security fixes
+
+## 0.9.0 - Tab completion
+* `565db070ff3b0394b9ac34dfc4c5561d5b9cb632` add tab completion to the Serial REPL
