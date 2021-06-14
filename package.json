@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "chart.js": "^2.8.0",
-    "serialport": "^9.1.0"
+    "serialport": "9.0.3",
+    "@serialport/bindings": "9.0.3"
   },
   "deserializers": {
     "language-circuitpython/BoardView": "deserializeBoardView",
